@@ -1,0 +1,10 @@
+# ignore todos os arquivos no diretorio node_modules
+node_modules/
+
+# ignore todos os arquivos no diretorio .git (necessário?)
+.git/
+
+# ignore o arquivo
+*.zip
+
+
