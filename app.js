@@ -29,8 +29,10 @@ if ('development' == app.get('env')) {
 		stream: fs.createWriteStream('app.log', {'flags': 'w'})
 	})); // add logger middleware
 	app.get('/', function(req, res) {
-		res.send('development mode test');
-		});
+		// res.send('development mode test');
+		res.status(500); // set the status
+		res.send('forced 500'); //specify the body
+	});
 }
 
 // Common setup for all the environments
